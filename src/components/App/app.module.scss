@@ -1,0 +1,32 @@
+.App {
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+	&Header {
+		min-height: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--white);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+	}
+	&Main {
+		margin-top: 115px;
+		flex: 1;
+	}
+
+	&Footer {
+		background-color: var(--dark-600);
+		min-height: 10vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: -1;
+	}
+}

@@ -1,0 +1,97 @@
+.Acordion {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 32px;
+
+	&Header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 16px;
+	}
+
+	&Title {
+		max-width: calc(100% - 80px);
+	}
+
+	&Btn {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: var(--froly);
+		border: 0;
+		outline: none;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 40px;
+		cursor: pointer;
+
+		&Icon {
+			position: relative;
+			width: 14px;
+			height: 2px;
+			background-color: var(--gray);
+			border-radius: 12px;
+			cursor: pointer;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 14px;
+				height: 2px;
+				background-color: var(--gray);
+				border-radius: 12px;
+				transform: rotate(90deg);
+				transition: all 0.3s ease-in-out;
+			}
+
+			&Open {
+				&::after {
+					transform: rotate(0deg);
+				}
+			}
+		}
+	}
+
+	&Content {
+		position: relative;
+		height: 0;
+		overflow: hidden;
+		transition: 0.5s;
+		overflow-y: auto;
+
+		&Open {
+			height: 80px;
+		}
+	}
+
+	&Endline {
+		margin-top: 5px;
+		width: 100%;
+		background-color: var(--dark-600);
+		opacity: 0.2;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.Acordion {
+		&Title {
+			font-size: 24px;
+			line-height: 34px;
+		}
+
+		&Description {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&ContentOpen {
+			height: 100px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.card {
+	position: relative;
+	width: 272px;
+	height: 320px;
+	z-index: 99;
+
+	.parrot {
+		position: absolute;
+		display: block;
+		width: 458px;
+		height: 568px;
+		top: -200px;
+		left: 150px;
+		z-index: 1;
+	}
+
+	.square {
+		display: flex;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		padding: 32px;
+		justify-content: flex-end;
+		background: url("../../../assets/img/home/Сard.png") center / contain no-repeat;
+		flex-direction: column;
+		z-index: 100;
+
+		.members {
+			z-index: 111;
+			p {
+				color: var(--white);
+				font-weight: 700;
+			}
+			.text {
+				font-size: 20px;
+			}
+			.count {
+				font-size: 56px;
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
+		width: 216px;
+		height: 254px;
+		.square {
+			right: -60px;
+			.members {
+				p {
+					color: var(--white);
+					font-weight: 700;
+				}
+				.text {
+					font-size: 18px;
+				}
+				.count {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}

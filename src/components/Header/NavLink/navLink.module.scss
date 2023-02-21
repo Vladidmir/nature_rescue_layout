@@ -1,0 +1,10 @@
+.link {
+	width: 100%;
+	text-decoration: none;
+	color: var(--dark);
+	font-size: 28px;
+	font-weight: 400;
+	&Active {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,56 @@
+.page {
+	height: 560px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: var(--hit-pink);
+	border-radius: 20px;
+	position: relative;
+
+	.info {
+		width: 389px;
+		height: 224px;
+		margin: 0 10px;
+
+		&Title {
+			color: #222433;
+			text-transform: capitalize;
+			font-size: 40px;
+		}
+
+		&Subtitle {
+			margin-top: 40px;
+			font-weight: 400;
+			font-size: 18px;
+		}
+	}
+
+	&Anchor {
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		top: -17vh;
+		z-index: 111;
+	}
+
+	@media (max-width: 850px) {
+		height: 648px;
+		flex-direction: column;
+		justify-content: center;
+
+		.info {
+			width: 80%;
+			height: 160px;
+			min-width: 300px;
+			max-width: 430px;
+			text-align: center;
+			&Title {
+				font-size: 28px;
+			}
+			&Subtitle {
+				margin-top: 20px;
+				font-size: 15px;
+			}
+		}
+	}
+}

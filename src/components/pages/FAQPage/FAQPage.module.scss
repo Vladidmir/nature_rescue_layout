@@ -1,0 +1,73 @@
+.FAQ {
+	display: flex;
+	width: 100%;
+	gap: 104px;
+	justify-content: center;
+	align-items: center;
+	height: 770px;
+	padding: 0 10px;
+	position: relative;
+
+	.encourageBlock {
+		width: 480px;
+		margin-bottom: 40px;
+		margin-right: 20px;
+
+		h1 {
+			font-size: 40px;
+			margin: 0 0 40px 0;
+			padding: 0;
+			color: var(--dark);
+		}
+
+		p {
+			width: 423px;
+			padding: 0;
+			margin: 0 0 71px 0;
+			color: var(--dark);
+			opacity: 0.9;
+		}
+
+		.contactButton {
+			width: 166px;
+			font-size: 13px;
+		}
+	}
+	&Anchor {
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		top: -17vh;
+		z-index: 111;
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+	.FAQ {
+		gap: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.FAQ {
+		flex-direction: column;
+		margin: 100px 0;
+		height: auto;
+
+		.encourageBlock {
+			width: 100%;
+			font-size: 28px;
+			line-height: 42px;
+			margin-bottom: 0;
+			margin-right: 0;
+
+			p {
+				width: 100%;
+			}
+		}
+
+		.contactButton {
+			margin-bottom: 63px;
+		}
+	}
+}

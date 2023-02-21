@@ -1,0 +1,75 @@
+.slide {
+	position: relative;
+	.img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: contain;
+		transition: transform 0.4s ease-out;
+		z-index: 1;
+
+		img {
+			width: 276px;
+			height: 281px;
+			transition: all 0.3s;
+		}
+		.title {
+			color: var(--white);
+			min-width: 150px;
+			position: absolute;
+			z-index: 10;
+			top: 50%;
+			transform: translate(50%, -50%);
+		}
+	}
+
+	.content {
+		transition: all 0.3s;
+		background: url("../../../../assets/img/slider/circle.png") center / contain no-repeat;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 364px;
+		max-width: 400px;
+		height: 435px;
+		opacity: 0;
+		transform: scale(0.5);
+		transform: translateY(-30%);
+
+		.descr {
+			width: 281px;
+			height: 114px;
+			margin-top: 20px;
+			text-align: center;
+			h3 {
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 34px;
+			}
+
+			p {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				color: var(--dark-600);
+				mix-blend-mode: normal;
+				opacity: 0.9;
+			}
+		}
+	}
+}
+
+.selected {
+	.img {
+		transform: translateY(-95%) translateX(-20%) scale(0.6);
+		left: 0;
+	}
+	.content {
+		opacity: 1;
+		transform: scale(1);
+		transform: translateY(0%);
+	}
+}

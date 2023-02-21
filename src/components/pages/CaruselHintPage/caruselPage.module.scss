@@ -1,0 +1,17 @@
+.caruselPage {
+	width: 100vw;
+	height: 655px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--hit-pink);
+	margin: 0 auto;
+	&Anchor {
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		top: -10vh;
+		z-index: 111;
+	}
+}

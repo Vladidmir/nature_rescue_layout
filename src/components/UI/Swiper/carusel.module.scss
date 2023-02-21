@@ -1,0 +1,22 @@
+.slider {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	min-width: 350px;
+
+	.swiper-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		@media (max-width: 640px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

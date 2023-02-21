@@ -1,0 +1,29 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 150;
+	background: var(--gray);
+	align-items: center;
+	padding: 37px 20px;
+	width: 100%;
+	border-bottom: 3px solid #222433;
+	&Logo {
+		width: 111px;
+		height: 37px;
+	}
+
+	&ApplyBtn {
+		width: 145px;
+		span * {
+			font-size: 12;
+		}
+	}
+
+	.links {
+		display: flex;
+		width: 540px;
+		justify-content: space-between;
+		margin: 0 20px;
+	}
+}

@@ -1,0 +1,39 @@
+.controllers {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 40px;
+	width: 144px;
+	height: 32px;
+	.trigger {
+		width: 8px;
+		height: 15px;
+		background: var(--dark-600);
+		background: none;
+		border: none;
+		font-size: 25px;
+		cursor: pointer;
+		&:hover {
+			span {
+				transition: all 0.3s;
+				color: white;
+			}
+		}
+	}
+
+	.status {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 45px;
+		font-size: 24px;
+		cursor: none;
+		:nth-child(2) {
+			color: rgba(0, 0, 0, 0.2);
+		}
+		:last-child {
+			color: rgba(0, 0, 0, 0.2);
+		}
+	}
+}
